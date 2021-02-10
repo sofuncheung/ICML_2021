@@ -12,9 +12,11 @@ GPU: NVIDIA GeForce RTX 2080 Ti
 CPU: Our anonymous computing cluster 
 
 We recommend using you own python3 virtual environment.
+
 Just create and **activate** your own virtual environment, then run:
 `python3 -m pip install -r requirements.txt`.
-then you are all set!
+
+Then you are all set!
 
 1. Reproducing figure. 3 (a), (b), (d), (e) and figure. 4, see FCN/
 
