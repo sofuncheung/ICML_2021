@@ -16,6 +16,8 @@ You can conveniently change dataset/optimizer by modifing a few lines in `sharpn
 and `collect-volume.py`. 
 These should be very straightforward to see if you read the code carefully. 
 
+## Some hints for customization
+
 For example, if you want to change optimizer from SGD to Adam in order to reproduce Figure. 4 (b) and (e),
 you can simply comment out line 196-197 and uncomment line 199 in `sharpness-generalization.py`.
 
