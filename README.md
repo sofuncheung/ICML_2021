@@ -14,5 +14,13 @@ Just create and **activate** your own virtual environment, then run:
 `python3 -m pip install -r requirements.txt`.
 then you are all set!
 
+1. Reproducing figure. 3 (a), (b), (d), (e) and figure. 4, see FCN/
+
+2. Reproducing figure. 3 (c), (f), see ResNet50/
+
+3. Reproducing figure. 5, see Temporal/
+
+1 and 3 can be run on single CPU in short time, while 2 preferably be run on GPU. 
+
 
 
