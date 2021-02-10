@@ -1,21 +1,14 @@
 # Example code for ResNet50/CIFAR-10
 
 The initial state of this example code can reproduce Fig. 3(c) and Fig. 3(f) in the paper.
-For other plots we need to change the neural network architecture/dataset/optimizer manually. 
 
-## Environment:
-
-Platform: Linux
-GPU: NVIDIA 2080 Ti
-
-First create and **activate** your own virtual environment, then run: 
-`python3 -m pip install -r requirements.txt`
 
 ## Run the main code
 
-`python main.py -p $(pwd) -s 1`
+`python main.py -p $(pwd) -s 1 --save_checkpoint_on_train_acc`
 
 `-p` indicates the path you want output files to be. `-s` means it is the first sample.
+`--save_checkpoint_on_train_acc` means current net's `state_dict` will be saved is it has highest training accuracy.  
 
 The main code does three things:
 1. Train the DNN to zero error
@@ -25,6 +18,8 @@ The main code does three things:
 If everything runs correctly, you will get a `record_1.npy`, which contains a numpy array
     [generalization accuracy, (log) sharpness, (log) volume].
     You can then use whatever tool you like to plot them.
+
+    We provided an example plotting script in `collect-plot.py` but it will **NOT** produce the figures automatically.
 
 ### Change the `attack_set_size`
 
@@ -46,15 +41,10 @@ do
     for s in `seq 1 1 5`
     do
         echo "submitting sample $s"
-        python main.py -p $dir -s $s
+        python main.py -p $dir -s $s --save_checkpoint_on_train_acc
     done
     cd ..
 done
 ```
 **Note:** if you open new directories to run the main code (e.g. create directories like `attack_size_0` and contain `config.py` in these individual directories) then you need to **remove** the `config.py` in the *same directory* as `main.py`, or the code will take that very one as the configs.
 
-### Choose other architecture/dataset/optimizer
-
-- architecture: `sed -i 's/net = resnet.ResNet50(num_classes=1)/net = fcn.FCN()/g' main.py`
-- dataset: Use the `-d` argument `python main.py -p $dir -d 'MNIST'`
-- optimizer: Can be set as the `optim` item in `config.py`
