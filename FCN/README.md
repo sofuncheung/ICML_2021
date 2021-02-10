@@ -17,7 +17,7 @@ and `collect-volume.py`.
 These should be very straightforward to see if you read the code carefully. 
 
 For example, if you want to change optimizer from SGD to Adam in order to reproduce Figure. 4 (b) and (e),
-you can simply comment out line 198-199 and uncomment line 201 in `sharpness-generalization.py`.
+you can simply comment out line 196-197 and uncomment line 199 in `sharpness-generalization.py`.
 
 For Entropy-SGD implementation, we use code from https://github.com/Justin-Tan/entropy-sgd-tf (which is not related to authors),
 please refer to that repository if motivated.
