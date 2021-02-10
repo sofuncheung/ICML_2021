@@ -18,11 +18,11 @@ Just create and **activate** your own virtual environment, then run:
 
 Then you are all set!
 
-1. Reproducing figure. 3 (a), (b), (d), (e) and figure. 4, see FCN/
+1. Reproducing figure. 3 (a), (b), (d), (e) and figure. 4, see [FCN/](https://anonymous.4open.science/repository/c12272d1-2823-453b-b59b-2e9a8905e2f7/FCN/)
 
-2. Reproducing figure. 3 (c), (f), see ResNet50/
+2. Reproducing figure. 3 (c), (f), see [ResNet50/](https://anonymous.4open.science/repository/c12272d1-2823-453b-b59b-2e9a8905e2f7/ResNet50/)
 
-3. Reproducing figure. 5, see Temporal/
+3. Reproducing figure. 5, see [Temporal/](https://anonymous.4open.science/repository/c12272d1-2823-453b-b59b-2e9a8905e2f7/Temporal/)
 
 1 and 3 can be run on single CPU in short time, while 2 preferably be run on GPU. 
 
