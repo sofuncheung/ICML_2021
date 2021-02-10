@@ -19,5 +19,7 @@ These should be very straightforward to see if you read the code carefully.
 For example, if you want to change optimizer from SGD to Adam in order to reproduce Figure. 4 (b) and (e),
 you can simply comment out line 196-197 and uncomment line 199 in `sharpness-generalization.py`.
 
-For Entropy-SGD implementation, we use code from https://github.com/Justin-Tan/entropy-sgd-tf (which is not related to authors),
+For CIFAR-10 dataset, you need to load the data from `data/x_train_car_and_cat.npy` etc. at line 328-331, and also modify the training set size at line 335 and input dimension for the input layer of neural network at line 152. We leave these tunability so readers can customize their own experiments conveniently. Also our code has necessary in-place comments so readability is guaranteed.
+
+For Entropy-SGD implementation, we use code from [here](https://github.com/Justin-Tan/entropy-sgd-tf) (which is not related to authors),
 please refer to that repository if motivated.
