@@ -1,7 +1,7 @@
 # Example code for paper *WHY FLATNESS CORRELATES WITH GENERALIZATION FOR DEEP NEURAL NETWORKS*
 
 For all of our experiments in the main text with open datasets, we provide source code to reproduce the results.
-This includes figure. 3 to figure. 5 in the main paper, and various results in the Appendix, with minimum modification to the code.
+This includes figure. 3 to figure. 5 in the main paper, and various results in the Appendix, with minimal modification to the code.
 
 ## Environment:
 
