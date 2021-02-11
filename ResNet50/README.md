@@ -19,7 +19,7 @@ If everything runs correctly, you will get a `record_1.npy`, which contains a nu
     [generalization accuracy, (log) sharpness, (log) volume].
     You can then use whatever tool you like to plot them.
 
-    We provided an example plotting script in `collect-plot.py` but it will **NOT** produce the figures automatically.
+We provided an example plotting script in `collect-plot.py` but it will **NOT** produce the figures automatically.
 
 ### Change the `attack_set_size`
 
