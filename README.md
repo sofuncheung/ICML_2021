@@ -27,6 +27,7 @@ python3 -m pip install --upgrade pip setuptools wheel
 ```
 
 then install the dependency specified by `requirements.txt`:
+
 `python3 -m pip install -r requirements.txt`.
 
 Then you are all set!
