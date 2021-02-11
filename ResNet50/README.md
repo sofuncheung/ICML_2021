@@ -8,7 +8,7 @@ The initial state of this example code can reproduce Fig. 3(c) and Fig. 3(f) in 
 `python main.py -p $(pwd) -s 1 --save_checkpoint_on_train_acc`
 
 `-p` indicates the path you want output files to be. `-s` means it is the first sample.
-`--save_checkpoint_on_train_acc` means current net's `state_dict` will be saved is it has highest training accuracy.  
+`--save_checkpoint_on_train_acc` means current net's `state_dict` will be saved if it has highest training accuracy.  
 
 The main code does three things:
 1. Train the DNN to zero error
