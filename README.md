@@ -13,7 +13,20 @@ CPU: Our anonymous computing cluster
 
 We recommend using you own python3 virtual environment.
 
-Just create and **activate** your own virtual environment, then run:
+Just create and **activate** your own virtual environment, 
+
+```
+mkdir ~/.venv 2>dev/null
+pushd ~/.venv
+python3 -m venv --system-site-packages MyEnvName
+# alter the VE's name as you like
+cd MyEnvName
+source bin/activate
+popd
+python3 -m pip install --upgrade pip setuptools wheel
+```
+
+then install the dependency specified by `requirements.txt`:
 `python3 -m pip install -r requirements.txt`.
 
 Then you are all set!
