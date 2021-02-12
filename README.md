@@ -7,9 +7,9 @@ This includes figure. 3 to figure. 5 in the main paper, and various results in t
 
 Platform: Linux
 
-GPU: NVIDIA GeForce RTX 2080 Ti
+GPU (tested on): NVIDIA GeForce RTX 2080 Ti
 
-CPU: Our anonymous computing cluster 
+CPU (tested on): Our anonymous computing cluster 
 
 We recommend using you own python3 virtual environment.
 
